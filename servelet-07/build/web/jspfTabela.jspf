@@ -1,0 +1,22 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<h2>Tabela</h2>
+<%
+     out.println("<table border=1>");
+            out.println("<tr>");
+            out.println("<th> Indice </th>");
+            out.println("<th> Numero </th>");
+            out.println("</tr>");
+            int i = 1;
+            while (i<=10){
+                int n = (int) (100*Math.random());
+                if (n%2==0){
+                    out.println("<tr>");
+                    out.println("<th> "+i+" </th>");
+                    out.println("<th> "+n+" </th>");
+                    out.println("</tr>");
+                    i++;
+            }
+        }
+            out.println("</table>");
+%>
